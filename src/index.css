@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Clash;
+  src: url(./assets/Fonts/ClashDisplay-Variable.ttf);
+  font-weight: 100 900;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --font-fam: Clash, system-ui;
+
+  /*Varying size-styles */
+  --step--2: clamp(0.56rem, calc(0.51rem + 0.25vw), 0.7rem);
+  --step--1: clamp(0.75rem, calc(0.68rem + 0.33vw), 0.94rem);
+  --step-0: clamp(1rem, calc(0.91rem + 0.43vw), 1.25rem);
+  --step-1: clamp(1.33rem, calc(1.22rem + 0.58vw), 1.67rem);
+  --step-2: clamp(1.78rem, calc(1.62rem + 0.77vw), 2.22rem);
+  --step-3: clamp(2.37rem, calc(2.16rem + 1.03vw), 2.96rem);
+  --step-4: clamp(3.16rem, calc(2.88rem + 1.37vw), 3.95rem);
+  --step-5: clamp(4.21rem, calc(3.84rem + 1.83vw), 5.26rem);
+  --accent--stroke--primary: rgba(185, 131, 255, 1);
+  --accent--bg: rgba(151, 71, 255, 1);
+  --screen-w: 100vw;
+  --screen-h: 100vh;
+
+  /* Text-size styles */
+  /* base size: body-primary (18px) */
+  --body-primary: 1rem;
+  --body-secondary: 0.78rem;
+  --heading-quartenary: 1.18rem;
+  --heading-tertiary: 1.58rem;
+  --heading-primary: 5rem;
+  --heading-secondary: 2.22rem;
+
+  /* Effect styles */
+  --shadow-medium: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Color styles */
+  --main-bg: rgba(251, 251, 251, 0.9333333373069763);
+  --stroke-primary: rgba(217, 217, 217, 1);
+  --main-text: rgba(53, 53, 53, 1);
+  --hovered-primary-bg: rgba(187, 187, 187, 0.25);
+  --placeholder-text-primary: rgba(122, 122, 122, 0.9);
+  --accent--primay: rgba(227, 68, 73, 1);
+  --quote-text: rgba(122, 122, 122, 1);
+  --synonym-text: rgba(21, 148, 219, 1);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-fam);
+  min-inline-size: var(--screen-w);
+  min-block-size: var(--screen-h);
+  padding-inline: clamp(1rem, 8vw, 5rem);
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+.body[data-font="Clash"] {
+  --font-fam: Clash, system-ui;
+}
+.body[data-font="Helvetica"] {
+  --font-fam: Helvetica, system-ui;
+}
+.body[data-font="Verdana"] {
+  --font-fam: Verdana, system-ui;
+}
+.body[data-font="Palatino"] {
+  --font-fam: Palatino, system-ui;
+}
+
+.body#light {
+  /* Color styles */
+  --main-bg: rgba(251, 251, 251, 0.9333333373069763);
+  --ball-bg: rgba(53, 53, 53, 1);
+  --stroke-primary: rgba(217, 217, 217, 1);
+  --main-text: rgba(53, 53, 53, 1);
+  --input-field-bg: #fff;
+  --hovered-primary-bg: rgba(187, 187, 187, 0.25);
+  --placeholder-text-primary: rgba(122, 122, 122, 0.9);
+  --quote-text: rgba(122, 122, 122, 1);
+  --synonym-text: rgba(21, 148, 219, 1);
+  --shadow-large: 2px 10px 15px rgba(0, 0, 0, 0.04);
+}
+
+.body#dark {
+  --main-bg: rgba(53, 53, 53, 1);
+  --ball-bg: rgba(251, 251, 251, 0.9333333373069763);
+  --stroke-primary: rgb(142, 142, 142);
+  --main-text: rgba(238, 238, 238, 1);
+  --input-field-bg: rgba(37, 37, 37, 85%);
+  --hovered-primary-bg: rgba(95, 95, 95, 0.5);
+  --placeholder-text-primary: rgba(255, 255, 255, 55%);
+  --quote-text: rgba(255, 255, 255, 0.6700000166893005);
+  --synonym-text: rgba(121, 199, 242, 1);
+  --shadow-large: 2px 10px 15px rgba(255, 255, 255, 0.04);
+}

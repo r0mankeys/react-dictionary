@@ -1,0 +1,48 @@
+.word-input-container {
+  margin-inline: auto;
+  margin-block-start: 4.75rem;
+  display: flex;
+}
+
+#word-input-field {
+  position: relative;
+}
+
+.word-input {
+  margin-inline: auto;
+  inline-size: clamp(15rem, 80vw, 55.625rem);
+  padding: 1.25rem;
+  align-items: flex-start;
+  gap: 4.5rem;
+  border-radius: 0.625rem;
+  background: var(--input-field-bg);
+  border: 1px solid var(--stroke-primary);
+  color: var(--main-text);
+}
+
+.word-input::placeholder {
+  color: var(--placeholder-text-primary);
+  font-size: 1.125rem;
+}
+
+.word-submit-btn {
+  cursor: pointer;
+  display: flex;
+  inline-size: 2rem;
+  block-size: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.search-icon {
+  stroke: var(--main-text);
+  stroke-width: 1.5px;
+}

@@ -1,0 +1,117 @@
+.navbar {
+  margin-block-start: 2.56rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  block-size: 3.9375rem;
+  border-radius: 0.625rem;
+  background: var(--main-bg);
+}
+
+.controls {
+  display: flex;
+  gap: 0.69rem;
+}
+
+.font-picker {
+  display: inline-flex;
+  height: 2.5rem;
+  padding: 0.325rem 1.15rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.325rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 0.5px solid var(--stroke-primary);
+  background: var(--main-bg);
+  color: inherit;
+  cursor: pointer;
+}
+
+.chevron {
+  inline-size: 1rem;
+  aspect-ratio: 1 / 1;
+}
+
+.theme-toggle {
+  display: flex;
+  width: 5rem;
+  height: 2.5rem;
+  padding: 0.3125rem 0.4375rem 0.3125rem 2.6875rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100vw;
+  border: 0.5px solid var(--stroke-primary);
+  background: var(--main-bg);
+  cursor: pointer;
+}
+
+.ball {
+  inline-size: 1.875rem;
+  block-size: 1.875rem;
+  border-radius: 6.25rem;
+  background-color: var(--ball-bg);
+  transition: 300ms ease-out;
+}
+
+.icon {
+  margin-block-start: 0.3rem;
+  inline-size: 1.3rem;
+  aspect-ratio: 1 / 1;
+}
+
+.moon-icon {
+  stroke: var(--main-bg);
+  stroke-width: 2px;
+  fill: var(--ball-bg);
+}
+
+.sun-icon {
+  margin-block-start: 0.12rem;
+  margin-inline-start: 0.12rem;
+  inline-size: 1.6rem;
+  block-size: 1.8rem;
+  aspect-ratio: 1 / 1;
+}
+
+.body#dark .ball {
+  transform: translateX(-40px);
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  position: absolute;
+  top: 2rem;
+  left: 0.2rem;
+  display: inline-flex;
+  padding: 0.43rem 0.43rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.125rem;
+  border-radius: 0.625rem;
+  border: 0.5px solid var(--stroke-primary);
+  background: var(--main-bg);
+  z-index: 999;
+}
+
+.font-option {
+  inline-size: 5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+.font-option:hover {
+  background-color: var(--hovered-primary-bg);
+}
+
+.font {
+  font-weight: normal;
+}
